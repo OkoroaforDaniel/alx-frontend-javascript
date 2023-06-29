@@ -1,14 +1,10 @@
-function getResponseFromAPI() {
+export default function getResponseFromAPI() {
+    const success = true;
     return new Promise((resolve, reject) => {
-      // Simulating an asynchronous API call
-      setTimeout(() => {
-        const response = {
-          message: "This is the API response",
-        };
-        resolve(response); // Resolving the Promise with the response
-      }, 2000); // Simulating a 2-second delay
+      if (success) {
+        resolve();
+      } else {
+        reject();
+      }
     });
   }
-  
-  export default getResponseFromAPI;
-  
