@@ -7,3 +7,4 @@ test("getResponseFromAPI resolves with the correct response", () => {
       });
     });
   });
+  
